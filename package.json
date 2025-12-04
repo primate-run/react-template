@@ -1,0 +1,25 @@
+{
+  "name": "@primate/app/react",
+  "description": "Primate React template",
+  "type": "module",
+  "scripts": {
+    "start": "npx primate",
+    "build": "npx primate build",
+    "serve": "npx primate serve",
+    "test": "npx primate test",
+    "test:deno": "deno run -A npm:primate test",
+    "test:bun": "bun x --bun primate test"
+  },
+  "dependencies": {
+    "@primate/react": "^0.15.0",
+    "@primate/sqlite": "^0.6.0",
+    "@rcompat/assert": "^0.3.1",
+    "pema": "^0.4.0",
+    "primate": "^0.35.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.15"
+  }
+}
