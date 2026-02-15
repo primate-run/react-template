@@ -11,15 +11,15 @@
     "test:bun": "bun x --bun primate test"
   },
   "dependencies": {
-    "@primate/react": "^0.15.0",
-    "@primate/sqlite": "^0.6.0",
-    "@rcompat/assert": "^0.3.1",
-    "pema": "^0.4.0",
-    "primate": "^0.35.1",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "@primate/react": "^0.16.0",
+    "@primate/sqlite": "^0.7.0",
+    "@rcompat/assert": "^0.6.0",
+    "pema": "^0.5.0",
+    "primate": "^0.36.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
-    "@types/react": "^19.1.15"
+    "@types/react": "^19.2.14"
   }
 }
