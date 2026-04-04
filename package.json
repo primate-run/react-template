@@ -11,11 +11,11 @@
     "test:bun": "bun x --bun primate test"
   },
   "dependencies": {
-    "@primate/react": "^0.16.0",
-    "@primate/sqlite": "^0.7.0",
-    "@rcompat/assert": "^0.6.0",
-    "pema": "^0.5.0",
-    "primate": "^0.36.0",
+    "@primate/react": "^0.17.0",
+    "@primate/sqlite": "^0.8.0",
+    "@rcompat/assert": "^0.8.1",
+    "pema": "^0.6.0",
+    "primate": "^0.37.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },

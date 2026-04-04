@@ -4,7 +4,7 @@ import p from "pema";
 import response from "primate/response";
 import route from "primate/route";
 
-await Counter.collection.create();
+await Counter.table.create();
 
 route.get(async () => {
   const counters = await Counter.find({});
@@ -17,11 +17,10 @@ route.get(async () => {
 });
 
 route.post(async request => {
-  const id = p.string.parse(request.query.get("id"));
-  const FormSchema = p({ counter: p.number.coerce });
-  const validated = request.body.form(FormSchema);
+  const id = p.u32.coerce(request.query.get("id"));
+  const validated = p({ counter: p.number }).coerce(request.body.form());
 
-  await Counter.update({ id }, { counter: validated.counter });
+  await Counter.update(id, { set: { counter: validated.counter } });
 
   return null;
 });
